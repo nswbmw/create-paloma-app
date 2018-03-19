@@ -1,0 +1,31 @@
+{
+  "name": "create-paloma-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node app",
+    "api": "apidoc -i app/routes/ -o ./docs"
+  },
+  "devDependencies": {
+    "apidoc": "0.17.6",
+    "eslint": "4.19.0",
+    "eslint-config-standard": "11.0.0",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-promise": "3.7.0",
+    "eslint-plugin-standard": "3.0.1"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "config-lite": "2.1.0",
+    "ioredis": "3.2.2",
+    "koa-bodyparser": "4.2.0",
+    "koa-logger": "3.2.0",
+    "koa-res": "3.0.1",
+    "lodash": "4.17.5",
+    "mongolass": "4.1.3",
+    "objectid-to-timestamp": "1.3.0",
+    "paloma": "1.1.7",
+    "validator": "9.4.1"
+  }
+}
