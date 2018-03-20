@@ -1,7 +1,7 @@
 {
   "name": "create-paloma-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create Paloma app easily.",
   "scripts": {
     "start": "node app",
     "api": "apidoc -i app/routes/ -o ./docs"
