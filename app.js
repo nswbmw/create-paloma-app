@@ -7,8 +7,8 @@ const pkg = require('./package')
 
 app.constant('_', require('lodash'))
 app.constant('config', config)
-app.constant('db', require('./app/lib/mongo'))
-app.constant('redis', require('./app/lib/redis'))
+app.constant('db', require('app/lib/mongo'))
+app.constant('redis', require('app/lib/redis'))
 
 app.use(logger())
 app.use(require('koa-res')({
