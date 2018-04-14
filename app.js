@@ -7,8 +7,8 @@ const pkg = require('./package')
 
 app.constant('_', require('lodash'))
 app.constant('config', config)
-app.constant('db', require('app/lib/mongo'))
-app.constant('redis', require('app/lib/redis'))
+app.constant('db', require('./app/lib/mongo'))
+app.constant('redis', require('./app/lib/redis'))
 
 app.use(logger())
 app.use(require('koa-res')({
@@ -16,9 +16,9 @@ app.use(require('koa-res')({
   version: pkg.version
 }))
 
-app.load('app/service')
-app.load('app/controller')
-app.load('app/route')
+app.load('./app/service')
+app.load('./app/controller')
+app.load('./app/route')
 
 app.listen(config.port, () => {
   console.log(`listening on ${config.port}`)
