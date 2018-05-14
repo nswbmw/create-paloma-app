@@ -13,7 +13,7 @@
     "eslint-plugin-import": "2.11.0",
     "eslint-plugin-node": "6.0.1",
     "eslint-plugin-promise": "3.7.0",
-    "eslint-plugin-standard": "3.0.1"
+    "eslint-plugin-standard": "3.1.0"
   },
   "dependencies": {
     "axios": "0.18.0",
@@ -22,10 +22,10 @@
     "koa-bodyparser": "4.2.0",
     "koa-logger": "3.2.0",
     "koa-res": "3.1.0",
-    "lodash": "4.17.5",
-    "mongolass": "4.2.0",
+    "lodash": "4.17.10",
+    "mongolass": "4.2.1",
     "objectid-to-timestamp": "1.3.0",
-    "paloma": "1.1.8",
-    "validator": "9.4.1"
+    "paloma": "1.2.1",
+    "validator": "10.2.0"
   }
 }
