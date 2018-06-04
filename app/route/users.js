@@ -1,5 +1,3 @@
-const db = require('../lib/mongo')
-
 /**
  * @api {get} /users/:uid 获取用户基本信息
  * @apiVersion 1.0.0
@@ -16,13 +14,15 @@ const db = require('../lib/mongo')
  *   "now": "2018-03-12T07:14:10.214Z"
  * }
  */
+
 app.route({
   method: 'GET',
   path: '/users/:uid',
-  controller: 'user.getUser',
+  routerName: 'getUser',
+  controller: 'User.getUser',
   validate: {
     params: {
-      uid: { type: db.Types.Numeric, required: true }
+      uid: { type: app.Types.Number, required: true }
     }
   }
 })
