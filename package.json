@@ -8,24 +8,24 @@
   },
   "devDependencies": {
     "apidoc": "0.17.6",
-    "eslint": "4.19.1",
-    "eslint-config-standard": "11.0.0",
-    "eslint-plugin-import": "2.12.0",
-    "eslint-plugin-node": "6.0.1",
-    "eslint-plugin-promise": "3.8.0",
-    "eslint-plugin-standard": "3.1.0"
+    "eslint": "5.5.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-node": "7.0.1",
+    "eslint-plugin-promise": "4.0.0",
+    "eslint-plugin-standard": "4.0.0"
   },
   "dependencies": {
     "axios": "0.18.0",
     "config-lite": "2.1.0",
-    "ioredis": "3.2.2",
+    "ioredis": "4.0.0",
     "koa-bodyparser": "4.2.1",
     "koa-logger": "3.2.0",
     "koa-res": "3.1.0",
     "lodash": "4.17.10",
-    "mongolass": "4.3.1",
+    "mongolass": "4.4.0",
     "objectid-to-timestamp": "1.3.0",
-    "paloma": "1.2.2",
-    "validator": "10.3.0"
+    "paloma": "1.2.3",
+    "validator": "10.7.1"
   }
 }
