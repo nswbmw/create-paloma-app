@@ -30,5 +30,12 @@
     "request": "2.88.0",
     "request-promise": "4.2.2",
     "validator": "10.9.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html"
+    ]
   }
 }
