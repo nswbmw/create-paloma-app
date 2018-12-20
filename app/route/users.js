@@ -1,7 +1,7 @@
 /**
  * @api {get} /users/:uid 获取用户基本信息
  * @apiVersion 1.0.0
- * @apiName GetUser
+ * @apiName getUser
  * @apiGroup User
  *
  * @apiParam (params) {String} uid 用户 id
@@ -19,10 +19,10 @@ app.route({
   method: 'GET',
   path: '/users/:uid',
   routerName: 'getUser',
-  controller: 'User.getUser',
   validate: {
     params: {
       uid: { type: app.Types.Number, required: true }
     }
-  }
+  },
+  controller: 'User.getUser'
 })

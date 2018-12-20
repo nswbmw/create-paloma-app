@@ -7,25 +7,28 @@
     "api": "apidoc -i app/routes/ -o ./docs"
   },
   "devDependencies": {
-    "apidoc": "0.17.6",
-    "eslint": "5.5.0",
+    "apidoc": "0.17.7",
+    "eslint": "5.10.0",
     "eslint-config-standard": "12.0.0",
     "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-node": "7.0.1",
-    "eslint-plugin-promise": "4.0.0",
-    "eslint-plugin-standard": "4.0.0"
+    "eslint-plugin-node": "8.0.0",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "jest": "23.6.0"
   },
   "dependencies": {
-    "axios": "0.18.0",
     "config-lite": "2.1.0",
-    "ioredis": "4.0.0",
+    "ioredis": "4.3.0",
     "koa-bodyparser": "4.2.1",
     "koa-logger": "3.2.0",
     "koa-res": "3.1.0",
-    "lodash": "4.17.10",
-    "mongolass": "4.4.0",
+    "lodash": "4.17.11",
+    "md5": "2.2.1",
+    "mongolass": "4.4.1",
     "objectid-to-timestamp": "1.3.0",
-    "paloma": "1.2.3",
-    "validator": "10.7.1"
+    "paloma": "1.2.4",
+    "request": "2.88.0",
+    "request-promise": "4.2.2",
+    "validator": "10.9.0"
   }
 }

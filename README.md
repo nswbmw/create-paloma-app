@@ -23,7 +23,7 @@
 │   ├── default.js
 │   └── production.js
 ├── script/
-├── test/
+├── __tests__/
 ├── .editorconfig
 ├── .eslintignore
 ├── .eslintrc.json
