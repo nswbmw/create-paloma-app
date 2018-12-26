@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Create Paloma app easily.",
   "scripts": {
-    "start": "node app",
-    "api": "apidoc -i app/routes/ -o ./docs"
+    "start": "pm2 start pm2.config.js",
+    "api": "apidoc -i app/route/ -o ./docs"
   },
   "devDependencies": {
     "apidoc": "0.17.7",
-    "eslint": "5.10.0",
+    "eslint": "5.11.0",
     "eslint-config-standard": "12.0.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jest": "22.1.2",
@@ -18,19 +18,26 @@
     "jest": "23.6.0"
   },
   "dependencies": {
+    "@koa/cors": "2.2.3",
+    "bluebird": "3.5.3",
     "config-lite": "2.1.0",
     "ioredis": "4.3.0",
+    "ioredis-ratelimit": "2.0.1",
+    "jsonwebtoken": "8.4.0",
     "koa-bodyparser": "4.2.1",
+    "koa-compose": "4.1.0",
+    "koa-helmet": "4.0.0",
+    "koa-jwt": "3.5.1",
     "koa-logger": "3.2.0",
-    "koa-res": "3.1.0",
+    "koa-res": "3.1.1",
     "lodash": "4.17.11",
     "md5": "2.2.1",
     "mongolass": "4.4.1",
-    "objectid-to-timestamp": "1.3.0",
     "paloma": "1.2.4",
     "request": "2.88.0",
     "request-promise": "4.2.2",
-    "validator": "10.9.0"
+    "tracer": "0.9.6",
+    "validator": "10.10.0"
   },
   "jest": {
     "collectCoverage": true,

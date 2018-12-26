@@ -8,5 +8,15 @@ module.exports = {
   redis: {
     host: 'localhost',
     port: 6379
+  },
+
+  jwt: {
+    secret: 'xxx',
+    issuer: 'xxx',
+    expiresIn: '30d'
+  },
+
+  logger: {
+    level: 'log'
   }
 }

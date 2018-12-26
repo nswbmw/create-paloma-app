@@ -1,3 +1,5 @@
+const jwt = require('../middleware/jwt')
+
 /**
  * @api {get} /users/:uid 获取用户基本信息
  * @apiVersion 1.0.0
@@ -24,5 +26,5 @@ app.route({
       uid: { type: app.Types.Number, required: true }
     }
   },
-  controller: 'User.getUser'
+  controller: [jwt.optional, 'User.getUser']
 })
