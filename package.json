@@ -2,6 +2,7 @@
   "name": "create-paloma-app",
   "version": "1.0.0",
   "description": "Create Paloma app easily.",
+  "private": true,
   "scripts": {
     "start": "pm2 start pm2.config.js",
     "api": "apidoc -i app/route/ -o ./docs"
