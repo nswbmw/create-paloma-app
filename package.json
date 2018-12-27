@@ -38,7 +38,7 @@
     "paloma": "1.2.4",
     "request": "2.88.0",
     "request-promise": "4.2.2",
-    "tracer": "0.9.6",
+    "tracer2": "0.9.8",
     "validator": "10.10.0"
   },
   "jest": {
