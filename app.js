@@ -1,3 +1,4 @@
+const path = require('path')
 const config = require('config-lite')(__dirname)
 const Paloma = require('paloma')
 
@@ -15,7 +16,13 @@ app.constant('logger', require('./app/lib/logger'))
 app.use(require('koa-helmet')())
 app.use(require('@koa/cors')())
 app.use(require('koa-logger')())
-app.use(require('koa-bodyparser')())
+app.use(require('koa-body')({
+  multipart: true,
+  formidable: {
+    uploadDir: path.join(__dirname, 'upload'),
+    keepExtensions: true
+  }
+}))
 app.use(require('koa-res')({
   debug: process.env.NODE_ENV !== 'production',
   version: pkg.version

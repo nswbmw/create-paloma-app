@@ -63,3 +63,5 @@ docs
 docs.zip
 package-lock.json
 dump.rdb
+upload/*
+!upload/.gitkeep
