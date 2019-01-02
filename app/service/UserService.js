@@ -1,4 +1,4 @@
-app.service('User', function (db) {
+app.service('UserService', function (db) {
   this.getUserByUid = async function getUserByUid (uid) {
     const user = (await db.User.create({
       uid,

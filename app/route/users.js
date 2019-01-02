@@ -26,5 +26,5 @@ app.route({
       uid: { type: app.Types.Number, required: true }
     }
   },
-  controller: [jwt.optional, 'User.getUser']
+  controller: [jwt.optional, 'UserController.getUser']
 })
