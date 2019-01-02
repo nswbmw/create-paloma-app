@@ -4,14 +4,15 @@ const Paloma = require('paloma')
 
 const app = global.app = new Paloma()
 const pkg = require('./package')
+const logger = require('./app/lib/logger')
 
-app.on('error', (e) => console.error(e))
+app.on('error', (e) => logger.error(e))
 
 app.constant('_', require('lodash'))
 app.constant('config', config)
 app.constant('db', require('./app/lib/mongo'))
 app.constant('redis', require('./app/lib/redis'))
-app.constant('logger', require('./app/lib/logger'))
+app.constant('logger', logger)
 
 app.use(require('koa-helmet')())
 app.use(require('@koa/cors')())
