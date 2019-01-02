@@ -1,7 +1,7 @@
-app.controller('User.getUser', async (ctx, next, logger, User) => {
+app.controller('User.getUser', async function getUser (ctx, next, logger, User) {
   const uid = ctx.params.uid
   const user = await User.getUserByUid(uid)
 
-  logger.info(`User.getUser -> uid: %s, user: %j`, uid, user)
+  logger.info(`uid: %s, user: %j`, uid, user)
   ctx.body = user
 })
