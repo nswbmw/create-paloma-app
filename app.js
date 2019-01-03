@@ -10,7 +10,7 @@ app.on('error', (e) => logger.error(e))
 
 app.constant('_', require('lodash'))
 app.constant('config', config)
-app.constant('db', require('./app/lib/mongo'))
+app.constant('db', require('./app/lib/db'))
 app.constant('redis', require('./app/lib/redis'))
 app.constant('logger', logger)
 
