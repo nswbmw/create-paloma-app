@@ -31,7 +31,7 @@
     "koa-helmet": "4.1.0",
     "koa-jwt": "3.5.1",
     "koa-logger": "3.2.0",
-    "koa-res": "3.1.1",
+    "koa-res": "4.0.0",
     "lodash": "4.17.11",
     "md5": "2.2.1",
     "moment": "2.24.0",

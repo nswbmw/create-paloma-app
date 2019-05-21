@@ -3,7 +3,6 @@ const config = require('config-lite')(__dirname)
 const Paloma = require('paloma')
 
 const app = global.app = new Paloma()
-const pkg = require('./package')
 const logger = require('./app/lib/logger')
 
 app.on('error', (e) => logger.error(e))
@@ -25,8 +24,7 @@ app.use(require('koa-body')({
   }
 }))
 app.use(require('koa-res')({
-  debug: process.env.NODE_ENV !== 'production',
-  version: pkg.version
+  debug: process.env.NODE_ENV !== 'production'
 }))
 
 app.load('./app/service')
